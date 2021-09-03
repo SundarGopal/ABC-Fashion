@@ -10,20 +10,21 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import Login from './component/Login'
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Login from './component/LoginScreen/Login'
 
+const Stack = createStackNavigator();
 
 const App= () => {
- 
 
   return (
-    <SafeAreaView>
-      <View style={styles.view}>
-        <Login/>
-        <Text>Hello World</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+      <Stack.Screen name="Login" component={Login} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
@@ -44,6 +45,9 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
+  view:{
+    paddingTop:50
+  }
   
 });
 
