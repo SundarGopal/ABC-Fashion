@@ -335,14 +335,13 @@ PODS:
     - React-cxxreact (= 0.65.1)
     - React-jsi (= 0.65.1)
     - React-perflogger (= 0.65.1)
-<<<<<<< HEAD
   - RNCAsyncStorage (1.15.7):
     - React-Core
-=======
+  - RNGestureHandler (1.10.3):
+    - React-Core
   - RNScreens (3.6.0):
     - React-Core
     - React-RCTImage
->>>>>>> e7ebda032c83fd39b6d088eb42424d02f3513db9
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -399,11 +398,9 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-<<<<<<< HEAD
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
-=======
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNScreens (from `../node_modules/react-native-screens`)
->>>>>>> e7ebda032c83fd39b6d088eb42424d02f3513db9
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -481,13 +478,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-<<<<<<< HEAD
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
-=======
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   RNScreens:
     :path: "../node_modules/react-native-screens"
->>>>>>> e7ebda032c83fd39b6d088eb42424d02f3513db9
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -534,11 +530,9 @@ SPEC CHECKSUMS:
   React-RCTVibration: 92d41c2442e5328cc4d342cd7f78e5876b68bae5
   React-runtimeexecutor: 85187f19dd9c47a7c102f9994f9d14e4dc2110de
   ReactCommon: eafed38eec7b591c31751bfa7494801618460459
-<<<<<<< HEAD
   RNCAsyncStorage: 7102fe8985f889579a3ae148d957bbb3f308122b
-=======
+  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNScreens: eb0dfb2d6b21d2d7f980ad46b14eb306d2f1062e
->>>>>>> e7ebda032c83fd39b6d088eb42424d02f3513db9
   Yoga: aa0cb45287ebe1004c02a13f279c55a95f1572f4
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
