@@ -26,7 +26,11 @@ export default class Login extends Component {
     console.log('login button');
   };
 
-  onLogoutButton = () => {};
+  onLogoutButton = () => {
+      console.log("updating login ")
+
+
+  };
 
   onForgotText = () => {
     //this.props.navigation.navigate('Forgot');
