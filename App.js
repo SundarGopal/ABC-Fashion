@@ -51,8 +51,10 @@ const styles = StyleSheet.create({
   },
   view:{
     paddingTop:50
-  }
+  },
+
   
 });
 
 export default App;
+
