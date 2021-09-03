@@ -18,11 +18,12 @@ export const getUsers = async() =>{
 const updateUsers = async() =>{
     await AsyncStorage.setItem('users', JSON.stringify(users));
 }
-export const addUsers = async(user) =>{
-    user.id = users.length+1;
+export const addUser = async(user) =>{
+    user.id = Math.random()*(1000+20)-3;
     users.push(user);
     await updateUsers();
 }
+
 
 
 

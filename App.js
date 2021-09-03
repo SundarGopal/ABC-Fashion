@@ -16,6 +16,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './component/LoginScreen/Login'
 import Home from './component/Home'
 import Profile from './component/Profile'
+import AddUser from './component/AddUser'
 
 const Stack = createStackNavigator();
 
@@ -24,8 +25,8 @@ const App= () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-       <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Home" component ={Home}/>
+       <Stack.Screen name="Add User" component={AddUser} />
+      <Stack.Screen name="Login" component ={Login}/>
       <Stack.Screen name="Profile" component ={Profile}/>
       </Stack.Navigator>
     </NavigationContainer>
