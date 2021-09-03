@@ -44,7 +44,7 @@ const AddUser = (props) => {
                 </View>
 
                 <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() => addToUser()}>
-                    <Text style={styles.loginText}>Add User</Text>
+                    <Text style={styles.loginText}>Create User</Text>
                 </TouchableHighlight>
             </View>
         );
@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         backgroundColor: '#DCDCDC',
+        paddingTop:50
     },
     topInput:{
         marginTop:30,

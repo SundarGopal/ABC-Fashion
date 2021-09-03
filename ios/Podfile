@@ -12,6 +12,7 @@ target 'FashionApp' do
     :hermes_enabled => false
   )
 
+
   target 'FashionAppTests' do
     inherit! :complete
     # Pods for testing

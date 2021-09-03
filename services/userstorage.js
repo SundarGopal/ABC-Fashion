@@ -7,10 +7,13 @@ let users =[
 export const getUsers = async() =>{
     let userList = await AsyncStorage.getItem('users');
     if (userList == null || userList =="null"){
+        console.log('Im here')
         users =[];
         return [];
     }else{
+        console.log('Im here')
         users =JSON.parse(userList);
+        console.log('USERS:',users);
         return users;
     }
 }
@@ -23,6 +26,7 @@ export const addUser = async(user) =>{
     users.push(user);
     await updateUsers();
 }
+
 
 
 

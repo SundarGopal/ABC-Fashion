@@ -9,7 +9,22 @@ import {
     Image,
     Alert
 } from 'react-native';
+import styles from "../Styles"
+import { getUsers } from '../../services/userstorage'
+import {Icon} from "react-native-elements"
 
+export const LOGO=require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/logo_fashion.jpg')
+
+export const ARROW=require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/ARROW.png')
+
+
+
+USER = {}
+let loadUsers = async () => {
+    user = await getUsers()
+    console.log("hhhhhhhhh", user);
+    USER = user
+}
 
 export default class Login extends Component {
     constructor(props) {
@@ -19,21 +34,27 @@ export default class Login extends Component {
         headerTitle: 'Login'
     };
     state = {
-        email: 'admin',
-        password: 'admin'
+        name: '',
+        password: ''
     }
 
     onLoginButton = () => {
+        loadUsers();
+        user = loadUsers();
         console.log(">> on login button");
-        if (this.state.email == this.state.password) {
-            this.props.navigation.navigate('Home', { name: this.state.email });
+        console.log(">>", this.state.name);
+        console.log(">>", USER);
+        console.log(">>", this.state.password);
+        console.log(">>", USER);
+        if ((this.state.name == this.state.password)) {
+            this.props.navigation.navigate('Tab', { name: this.state.name });
             this.setState({
-                email: '',
+                name: '',
                 password: ''
             });
 
         } else {
-            alert('Username/Password should be admin/admin.');
+            alert('Username/Password is invalid');
         }
     }
 
@@ -48,21 +69,22 @@ export default class Login extends Component {
     render() {
         return (
             <View style={styles.container}>
-            
-                <View style={styles.inputContainer}>
+
+                <Image style={styles.LoginLogo} source={LOGO} />
+
+                <View style={styles.LoginUpContainer}>
                     <Image style={styles.inputIcon}
-                        source={{ uri: "https://img.icons8.com/ios-filled/50/000000/username.png" }} />
+                        source={{ uri: "https://img.icons8.com/ios/50/000000/user--v1.png" }} />
                     <TextInput style={styles.inputs}
-                        placeholder="Email"
-                        keyboardType="email-address"
+                        placeholder="Name"
                         underlineColorAndroid='transparent'
-                        value={this.state.email}
-                        onChangeText={(email) => this.setState({ email })} />
+                        value={this.state.name}
+                        onChangeText={(name) => this.setState({ name })} />
                 </View>
 
-                <View style={styles.inputContainer}>
+                <View style={styles.LoginDownContainer}>
                     <Image style={styles.inputIcon}
-                        source={{ uri: 'https://img.icons8.com/ios-glyphs/30/000000/password--v1.png' }} />
+                        source={{ uri: 'https://img.icons8.com/ios/50/000000/password--v1.png' }} />
                     <TextInput style={styles.inputs}
                         placeholder="Password"
                         secureTextEntry={true}
@@ -72,60 +94,26 @@ export default class Login extends Component {
                 </View>
 
                 <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.onLoginButton()}>
-                    <Text style={styles.loginText}>Login</Text>
+                    <Text >
+                    <Text style={styles.loginText}>LOG IN</Text>
+                    {/* <Image source={ARROW} /> */}
+                    {/* <Icon name='arrow-right-bold-circle'/> */}
+                    </Text>
+                    
+                </TouchableHighlight>
+
+                
+
+
+                
+                    <Text >Doesn't have an  account? Swipe right to 
+                        
+                        </Text>
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Add User', {})}>
+                        <Text style ={styles.addcustomerlink}> create new account </Text>
                 </TouchableHighlight>
             </View>
         );
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#FFEDDA',
-        
-    },
-    inputContainer: {
-        borderBottomColor: '#F5FCFF',
-        backgroundColor: '#FFFFFF',
-        borderRadius: 30,
-        borderBottomWidth: 1,
-        width: 250,
-        height: 45,
-        marginBottom: 20,
-        flexDirection: 'row',
-        alignItems: 'center',
-        borderColor:"#FFFFFF"
-    },
-    inputs: {
-        height: 45,
-        marginLeft: 16,
-        borderBottomColor: '#FFFFFF',
-        flex: 1,
-    },
-    inputIcon: {
-        width: 30,
-        height: 30,
-        marginLeft: 15,
-        justifyContent: 'center'
-    },
-    buttonContainer: {
-        height: 45,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: 20,
-        width: 250,
-        borderRadius: 30,
-    },
-    loginButton: {
-        backgroundColor: "#3DB2FF",
-        
-    },
-    loginText: {
-        color: 'white',
-        fontSize:20
-    }
-});
