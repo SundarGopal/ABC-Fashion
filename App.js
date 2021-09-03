@@ -10,6 +10,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import Login from './component/Login'
 
 
 
@@ -18,7 +19,8 @@ const App= () => {
 
   return (
     <SafeAreaView>
-      <View>
+      <View style={styles.view}>
+        <Login/>
         <Text>Hello World</Text>
       </View>
     </SafeAreaView>
@@ -42,6 +44,7 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
+  
 });
 
 export default App;

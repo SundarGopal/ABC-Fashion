@@ -17,10 +17,10 @@ export default class Login extends Component {
   static navigationOptions = {
     headerTitle: 'Fashion App',
   };
-//   state = {
-//     email: 'admin',
-//     password: 'admin',
-//   };
+   state = {
+    email: 'admin',
+   password: 'admin',
+   };
 
   onLoginButton = () => {
     console.log('login button');
