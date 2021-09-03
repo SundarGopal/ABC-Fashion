@@ -14,7 +14,6 @@ import {
 
 
 const App= () => {
- 
 
   return (
     <SafeAreaView>
