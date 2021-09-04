@@ -8,17 +8,43 @@ import {
   TouchableNativeFeedback,
   Platform
 } from 'react-native';
+
 import {Img} from 'react-image'
+
+import { useNavigation } from '@react-navigation/core';
+
 
 import Card from './Card';
 
 const ProductItem = props => {
 
+    let navigation = useNavigation();
+
+    const selectItemHandler = (id, name) => {
+        
+        console.log("HELLLO NAVIGATING")
+
+      navigation.navigate('ProductDetails', {
+        productId: id,
+        productTitle: name
+      });
+    };
+
     return (
 
     <Card>
         <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> {
+                
+                selectItemHandler(props.id,props.name);
+                
+                console.log("THE PROPS ARE")
+                console.log(props)
+                console.log("IN PRODUCT")
+                
+                }} >
+                
+                
                 <View>
                     <View>
                       <Image source={require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg') } /> 

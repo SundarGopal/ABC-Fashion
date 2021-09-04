@@ -13,9 +13,9 @@ import styles from "../Styles"
 import { getUsers } from '../../services/userstorage'
 import {Icon} from "react-native-elements"
 
-export const LOGO=require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/logo_fashion.jpg')
+export const LOGO=require('../../src/logo_fashion.jpg')
 
-export const ARROW=require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/ARROW.png')
+export const ARROW=require('../../src/ARROW.png')
 
 
 
@@ -77,7 +77,7 @@ export default class Login extends Component {
                     <Image style={styles.inputIcon}
                         source={{ uri: "https://img.icons8.com/ios/50/000000/user--v1.png" }} />
                     <TextInput style={styles.inputs}
-                        placeholder="Name"
+                        placeholder="UserName"
                         underlineColorAndroid='transparent'
                         value={this.state.name}
                         onChangeText={(name) => this.setState({ name })} />
@@ -107,7 +107,7 @@ export default class Login extends Component {
 
 
                 
-                    <Text >Doesn't have an  account? Swipe right to 
+                    <Text >Don't have an  account? Swipe right to 
                         
                         </Text>
                         <TouchableHighlight onPress={() => this.props.navigation.navigate('Add User', {})}>

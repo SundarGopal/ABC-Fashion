@@ -5,24 +5,25 @@ import {
     Text,
     Image,
     Button,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
   } from 'react-native';
 
-  const ProductDetails= props=>{
+  const ProductDetails = props =>{
 
-    console.log(props)
-    const productId = props.navigation.getParam('productId');
-
-    console.log(productId)
+     
+    //const productId = props.navigation.('productId');
+    console.log(props.navigation.route.params.productId);
+    /*console.log(productId)
     const selectedProduct= useSelector(state => 
         
         state.products.find(prod => prod.id === productId)
-        )
+        ) */
 
 
     return(
         <ScrollView>
-            <Text>{selectedProduct}</Text>
+             <Text>{selectedProduct}</Text>
             <Text>${selectedProduct.rate}</Text>
 
 

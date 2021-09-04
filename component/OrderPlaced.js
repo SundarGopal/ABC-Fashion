@@ -6,6 +6,7 @@ import {
     TextInput,
     Button,
     TouchableHighlight,
+    TouchableOpacity,
     Image,
     Alert
 } from 'react-native';
@@ -30,38 +31,46 @@ export default class OrderPlaced extends Component {
     };
 
     onOrderPlacedButton = () => {
-        this.props.navigation.navigate('Tab', { });
+        this.props.navigation.navigate('Home', { });
     }
 
     onOrderCancelButton = () => {
-        this.props.navigation.navigate('Tab', { });
+        this.props.navigation.navigate('Home', { });
     }
 
     render() {
         return (
   
             <View>
-                <View style={{alignItems:'center', marginTop:10, marginLeft:260}}>
-                
+                <View>
+                <TouchableOpacity onPress={() => this.onOrderCancelButton()}>
+                <View style={{alignItems:'center', marginTop:10, marginLeft:290,paddingLeft:50}}>
                 <Image style={{ height: 30,borderRadius:200, width:60}} source={CANCEL} />
                 </View>
-                <View style={{alignItems:'center', marginTop:50}}>
+                </TouchableOpacity>
+                </View>
+                <View style={{alignItems:'center', marginTop:50,paddingTop:50}}>
                 <Image style={{ height: 80,borderRadius:200, width:80}} source={TICK} />
                 </View>
                 
-                <View>
+                <View >
                     <Text></Text>
                     <Text></Text>
-                    <Text style={{fontSize:40,fontWeight:'bold'}}> Order Placed!</Text>
+                    <View style={{ alignItems:'center'}}>
+                    <Text style={{fontSize:30,fontWeight:'bold'}}> Order Placed!</Text>
+                    </View>
                     <Text></Text>
-                    <Text style={{fontSize:20}}>
+                    <View style={{justifyContent:'center',alignItems:'center'}}>
+                    <Text style={{fontSize:18}}>
                         Your order was placed successfully.
                     </Text>
-                    <Text style={{fontSize:20, marginBottom:40}}>For more details, check All My Orders page under Profile tab</Text>
+                    <Text style={{fontSize:18, marginBottom:40}}>For more details, check All My Orders page under Profile tab</Text>
+                    </View>
                 </View>
 
 
-                <TouchableHighlight style={[styles.buttonContainer, styles.OrderPlacedButton]} onPress={() => this.onOrderPlacedButton()}>
+                <TouchableHighlight style={{height: 45,flexDirection: 'row',justifyContent: 'center', alignItems: 'center',marginBottom: 20,marginLeft:50,width: "80%",
+      borderRadius: 30, backgroundColor: "#FF6969"}} onPress={() => this.onOrderPlacedButton()}>
                     <Text >
                     <Text style={styles.loginText}>ORDER MORE</Text>
 

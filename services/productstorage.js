@@ -1,22 +1,22 @@
-var products1 =[
-    {id:1,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.9",color:"Light Green"},
-    {id:2,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0002_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.8",color:"Purple"},
-    {id:3,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0003_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.6",color:"Brown"},
-    {id:4,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0004_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.8",color:"Lime"},
-    {id:5,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0005_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.5",color:"Pink"},
-    {id:6,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0006_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.2",color:"Green"},
-    {id:7,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0007_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.6",color:"Pink"},
-    {id:8,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0008_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.8",color:"BrownGreen"},
-    {id:9,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0009_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.2",color:"White"},
-    {id:10,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0010_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.1",color:"Green"},
-    {id:11,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0011_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.3",color:"Orange"},
-    {id:12,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0012_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.7",color:"Red"},
-    {id:13,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0013_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.9",color:"Yellow"},
-    {id:14,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0014_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.2",color:"Gray"},
-    {id:15,url:'/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0015_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.5",color:"Striped-Yellow"},
+var products =[
+    {id:1,url:'./FashionApp/src/tshirt/0001_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.9",color:"Light Green"},
+    {id:2,url:'./FashionApp/src/tshirt/0002_fashion_image.jpg',name:"V Neck Shirt",rate:"25.99",rating:"4.8",color:"Purple"},
+    {id:3,url:'./FashionApp/src/tshirt/0003_fashion_image.jpg',name:"V Neck Shirt",rate:"26.99",rating:"4.6",color:"Brown"},
+    {id:4,url:'./FashionApp/src/tshirt/0004_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.8",color:"Lime"},
+    {id:5,url:'./FashionApp/src/tshirt/0005_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.5",color:"Pink"},
+    {id:6,url:'./FashionApp/src/tshirt/0006_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.2",color:"Green"},
+    {id:7,url:'./FashionApp/src/tshirt/0007_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.6",color:"Pink"},
+    {id:8,url:'./FashionApp/src/tshirt/0008_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.8",color:"BrownGreen"},
+    {id:9,url:'./FashionApp/src/tshirt/0009_fashion_image.jpg',name:"V Neck Shirt",rate:"24.99",rating:"4.2",color:"White"},
+    {id:10,url:'./FashionApp/src/tshirt/0010_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.1",color:"Green"},
+    {id:11,url:'./FashionApp/src/tshirt/0011_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.3",color:"Orange"},
+    {id:12,url:'./FashionApp/src/tshirt/0012_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.7",color:"Red"},
+    {id:13,url:'./FashionApp/src/tshirt/0013_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"26.99",rating:"4.9",color:"Yellow"},
+    {id:14,url:'./FashionApp/src/tshirt/0014_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"25.99",rating:"4.2",color:"Gray"},
+    {id:15,url:'./FashionApp/src/tshirt/0015_fashion_image.jpg',name:"V Neck Polo Shirt",rate:"24.99",rating:"4.5",color:"Striped-Yellow"},
   ];
 
-  var products =[
+  var products1 =[
     {id:1,url:'https://drive.google.com/file/d/1Ccfk0_RmGvKRtTx1YzX67ltNobIHgh9_/view?usp=sharing',name:"V Neck Shirt",rate:"24.99",rating:"4.9",color:"Light Green"},
     {id:2,url:'https://drive.google.com/file/d/1obZ6_8sl6nU-XbDg4AuhmQtyJN60KHHR/view?usp=sharing',name:"V Neck Shirt",rate:"24.99",rating:"4.8",color:"Purple"},
     {id:3,url:'https://drive.google.com/file/d/1rrbf2KTBYftFVnOZpH9RjxVi-Jb0rVKI/view?usp=sharing',name:"V Neck Shirt",rate:"24.99",rating:"4.6",color:"Brown"},
@@ -37,7 +37,7 @@ var products1 =[
 
 
 export var getProducts = ()=>{
-    return products1;
+    return products;
 }
 
 export var getProductByid = (id) =>{
