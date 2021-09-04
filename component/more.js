@@ -1,59 +1,100 @@
 import React, { useState,useEffect } from "react";
-import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,Button} from "react-native";
+import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,ScrollView} from "react-native";
 
-//import IconAntDesign from 'react-native-vector-icons/AntDesign'
+import IconAntDesign from 'react-native-vector-icons/AntDesign'
+import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD
+import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons' //ADD
+import IconFontisto from 'react-native-vector-icons/Fontisto' //ADD
 
-function More() {
+IconAntDesign.loadFont()
+IconIonicons.loadFont()  //ADD
+IconFontisto.loadFont()  //ADD
+IconMaterialIcons.loadFont()  //ADD
+
+function more() {
     return (
+    
+
+      <ScrollView>
        <View style={styles.container}>
         
-        <View style={{paddingLeft:10,paddingRight:50,paddingTop:0,borderWidth:0,flexDirection: 'row'}}> 
-        
-        </View>
-        
+      
         <Text style={{fontSize:50,fontWeight: 'bold',color: '#45535B',paddingTop:10}}>More</Text>
-        <View >
         
         <Text></Text>
         <Text></Text>
-        <Text></Text>
-
+       
         <View style={styles.container2} >
 
         <TouchableOpacity style={styles.Clicktabs}>
+         <View style={styles.leftIcon}>   
+        <IconMaterialIcons name='local-shipping' size ={20} color='grey'/>
+        </View>
+        <View style={{borderWidth:0,paddingRight:120}}>
         <Text style={styles.text} >Shipping Address</Text>
+        </View>
+        <View style={styles.rightIcon}> 
+        <IconAntDesign name='rightcircleo' size ={20} color='grey'/>
+        </View>
         </TouchableOpacity>
 
-        <Text></Text>
-
         <TouchableOpacity style={styles.Clicktabs}>
-        
+         <View style={styles.leftIcon}>   
+        <IconMaterialIcons name='payment' size ={20} color='grey'/>
+        </View>
+        <View style={{borderWidth:0,paddingRight:120}}>
         <Text style={styles.text} >Payment Method</Text>
+        </View>
+        <View style={styles.rightIcon}> 
+        <IconAntDesign name='rightcircleo' size ={20} color='grey'/>
+        </View>
         </TouchableOpacity>
-        
-        <Text></Text>
-        
+
         <TouchableOpacity style={styles.Clicktabs}>
+         <View style={styles.leftIcon}>   
+        <IconAntDesign name='wallet' size ={20} color='grey'/>
+        </View>
+        <View style={{borderWidth:0,paddingRight:150}}>
         <Text style={styles.text} >Currency</Text>
+        </View>
+        <View>
+        <Text style={{color:'grey'}} >USD</Text>
+        </View>
+        <View style={styles.rightIcon}> 
+        <IconAntDesign name='rightcircleo' size ={20} color='grey'/>
+        </View>
         </TouchableOpacity>
 
-        <Text></Text>
-        
         <TouchableOpacity style={styles.Clicktabs}>
-        <Text style={styles.text} >Language</Text>
+         <View style={styles.leftIcon}>   
+        <IconIonicons name='language' size ={20} color='grey'/>
+        </View>
+        <View style={{borderWidth:0,paddingRight:125}}>
+        <Text style={styles.text}>Language</Text>
+        </View>
+        <View>
+        <Text style={{color:'grey'}}>English</Text>
+        </View>
+        <View style={styles.rightIcon}> 
+        <IconAntDesign name='rightcircleo' size ={20} color='grey'/>
+        </View>
         </TouchableOpacity>
         
         </View>
-
-      <Button title = "LOG OUT" fontSize = '30' color ='' ></Button>
-
-        </View>
         
+        <View style={{paddingTop:70}} >
+
+      <TouchableOpacity style={{alignItems: 'center'}}>
+        <Text style={{color:'red'}}>LOG OUT</Text>
+      </TouchableOpacity>
+
         </View>
+        </View>
+        </ScrollView>     
     );
   }
 
-export default More;
+export default more;
 
 
 
@@ -108,12 +149,14 @@ const styles = StyleSheet.create({
 
     Clicktabs :{
 
-        padding:15,
-        borderRadius:20,
-        borderWidth:0,
-        backgroundColor: 'white',
-        flexDirection:'row'
-    },
+      padding:15,
+      borderRadius:20,
+      borderWidth:0,
+      backgroundColor: 'white',
+      flexDirection:'row',
+      justifyContent: 'space-evenly'
+    
+  },
     
     text:{
         paddingLeft:"0%",
@@ -121,6 +164,20 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         fontSize:15
     },
+
+    leftIcon: {
+      borderWidth:0,
+      alignItems:'flex-start',
+      flex:1
+    },
+
+    rightIcon: {
+      paddingLeft:0,
+      flex:1,
+      borderWidth:0,
+      alignItems:'flex-end'
+    },
+
    
     button: {
       alignItems: "center",
