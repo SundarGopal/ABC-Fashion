@@ -9,6 +9,7 @@ import IconSimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons' //AD
 import IconOcticons from 'react-native-vector-icons/Octicons' //ADD
 import IconFeather from 'react-native-vector-icons/Feather' //ADD
 import IconMaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons' //ADD
+import { useNavigation } from '@react-navigation/core';
 
 IconAntDesign.loadFont()
 IconIonicons.loadFont()  //ADD
@@ -20,8 +21,29 @@ IconFeather.loadFont()  //ADD
 IconMaterialCommunityIcons.loadFont()  //ADD
 
 function profile() {
+  let navigation = useNavigation();
     return (
        <ScrollView>
+      <View style={{borderWidth:0,justifyContent:'space-between',alignItems:'center',height:90,flexDirection:'row',paddingTop:50}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Home',{})}}>
+      <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,borderWidth:0}}/>
+      </TouchableOpacity>
+      <View style={{alignItems:'flex-end',paddingTop:0,borderWidth:0}}>
+        <View style={{flexDirection:'row'}}>
+        <TouchableOpacity>
+        <View style={{ paddingRight:20}}>
+        <IconAntDesign name='message1' size ={30} color='black'/>
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{ paddingRight:20}}>
+        <IconAntDesign name='notification' size ={30} color='black'/>
+        </View>
+        </TouchableOpacity>
+        </View>
+        </View>
+    </View>
+
        <View style={styles.container}>
            
         <View> 
@@ -29,7 +51,7 @@ function profile() {
        
         <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row'}}> 
 
-        <Image style={styles.profilePic} source={require('../src/ABC_Faishon/0001_fashion_image.jpg')}/>
+        <Image style={styles.profilePic} source={require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg')}/>
        
        <View style={{padding:25,flex:9,borderWidth:0}}>
        <Text>EMAIL</Text>

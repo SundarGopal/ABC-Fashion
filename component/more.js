@@ -1,21 +1,43 @@
 import React, { useState,useEffect } from "react";
 import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,ScrollView} from "react-native";
 
+import { useNavigation } from '@react-navigation/core';
+
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
 import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD
 import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons' //ADD
 import IconFontisto from 'react-native-vector-icons/Fontisto' //ADD
+import IconFontAwesome from 'react-native-vector-icons/FontAwesome' //ADD
 
 IconAntDesign.loadFont()
 IconIonicons.loadFont()  //ADD
 IconFontisto.loadFont()  //ADD
 IconMaterialIcons.loadFont()  //ADD
+IconFontAwesome.loadFont() //ADD
 
-function more() {
-    return (
+function More() {
+    
+  let navigation = useNavigation();
+  return (
     
 
       <ScrollView>
+    <View style={{borderWidth:0,justifyContent:'space-between',alignItems:'center',height:90,flexDirection:'row',paddingTop:50}}>
+    
+    <TouchableOpacity onPress={()=>{navigation.navigate('Home',{})}}>
+    <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,borderWidth:0}}/>
+    </TouchableOpacity>
+    <View style={{alignItems:'flex-end',paddingTop:0,borderWidth:0}}>
+        <View>
+        <TouchableOpacity>
+        <View style={{ paddingRight:20}}>
+        <IconAntDesign name='shoppingcart' size ={30} color='black'/>
+        </View>
+        </TouchableOpacity>
+        </View>
+        </View>
+    </View>
+
        <View style={styles.container}>
         
       
@@ -67,7 +89,7 @@ function more() {
 
         <TouchableOpacity style={styles.Clicktabs}>
          <View style={styles.leftIcon}>   
-        <IconIonicons name='language' size ={20} color='grey'/>
+        <IconFontAwesome name='language' size ={20} color='grey'/>
         </View>
         <View style={{borderWidth:0,paddingRight:125}}>
         <Text style={styles.text}>Language</Text>
@@ -84,7 +106,7 @@ function more() {
         
         <View style={{paddingTop:70}} >
 
-      <TouchableOpacity style={{alignItems: 'center'}}>
+      <TouchableOpacity style={{alignItems: 'center'}} onPress={()=>{navigation.navigate('Login',{})}}>
         <Text style={{color:'red'}}>LOG OUT</Text>
       </TouchableOpacity>
 
@@ -94,7 +116,7 @@ function more() {
     );
   }
 
-export default more;
+export default More;
 
 
 
@@ -108,7 +130,8 @@ const styles = StyleSheet.create({
       backgroundColor:'#F5F5F5',
       width:'100%',
       paddingLeft:20,
-      paddingRight:20
+      paddingRight:20,
+      borderWidth:0
     },
 
     container2:{

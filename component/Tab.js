@@ -75,17 +75,21 @@ export default function MyTabs() {
         <Tab.Screen name="Profile" component={Profile} 
         options={{
            tabBarLabel: 'Profile',
+           title:"",
            tabBarIcon: ({ color, size }) => (
             <Icon name="user" size={25}/>
            ),
+           headerShown: false
          }}
          />
         <Tab.Screen name="More" component={More}
         options={{
            tabBarLabel: 'More',
+           title:"",
            tabBarIcon: ({ color, size }) => (
             <Icon name="list" size={25}  />
            ),
+           headerShown: false
          }}
          />
       </Tab.Navigator>

@@ -5,6 +5,7 @@ import { Text, View,SafeAreaView, ScrollView,Image ,StyleSheet,Dimensions, Touch
 import IconFeather from 'react-native-vector-icons/Feather'
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
 
+import { useNavigation } from '@react-navigation/core'; //NAVIGATION
 
 const {width} = (Dimensions.get('window'));
 const height = width*0.5
@@ -14,6 +15,8 @@ IconAntDesign.loadFont();
 
 export default function ProductDetail() {
 
+  let navigation = useNavigation();
+
   let [stateProduct,setStateProduct] = useState(null)
   let [stateDetail,setStateDetail] = useState(null)
   let [stateReviews,setStateReviews] = useState(null)
@@ -21,16 +24,35 @@ export default function ProductDetail() {
   
   return (
 <ScrollView>
-<View style={{flex:0,borderWidth:0,backgroundColor: '#F5F5F5',justifyContent: 'center',paddingLeft:20,paddingRight:20}}>
+
+
+
+<View style={{flex:1,borderWidth:0,backgroundColor: '#F5F5F5',justifyContent: 'center',paddingLeft:10,paddingRight:10,paddingTop:70}}>
       
 
-<View style={{borderWidth:0,justifyContent:'space-around',alignItems:'center',height:70,paddingTop:20}}>
-<Text>V Neck Shirt - Pink</Text>
-<Text>price - rating</Text>
+<View style={{borderWidth:0,justifyContent:'space-between',alignItems:'center',height:70,flexDirection:'row'}}>
+
+<TouchableOpacity onPress={()=>{navigation.navigate('Search',{})}}>
+<IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,borderWidth:0}}/>
+</TouchableOpacity>
+
+<View style={{borderWidth:0,paddingRight:50,justifyContent:'center',alignItems:'center'}}>
+<Text style={{fontSize:18}}>V Neck Shirt - Pink</Text>
+<Text style={{fontSize:16}}>price - rating</Text>
+</View >
+<View style={{alignItems:'flex-end',paddingTop:0,borderWidth:0}}>
+        <View>
+        <TouchableOpacity>
+        <View style={{ paddingRight:20}}>
+        <IconAntDesign name='shoppingcart' size ={30} color='black'/>
+        </View>
+        </TouchableOpacity>
+        </View>
+        </View>
 </View>
 
 <View style={{borderWidth:0,justifyContent:'space-around',alignItems:'center',paddingTop:30,paddingBottom:40}}>
-<Image source={require('./0001_fashion_image.jpg')} style={{height:200,width:150}} />
+<Image source={require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg')} style={{height:200,width:150}} />
 </View>
 
 
