@@ -39,13 +39,13 @@ export default class Login extends Component {
     }
 
     onLoginButton = () => {
-        loadUsers();
+       /*  loadUsers();
         user = loadUsers();
         console.log(">> on login button");
         console.log(">>", this.state.name);
         console.log(">>", USER);
         console.log(">>", this.state.password);
-        console.log(">>", USER);
+        console.log(">>", USER); */
         if ((this.state.name == this.state.password)) {
             this.props.navigation.navigate('Tab', { name: this.state.name });
             this.setState({
@@ -69,6 +69,7 @@ export default class Login extends Component {
     render() {
         return (
             <View style={styles.container}>
+
 
                 <Image style={styles.LoginLogo} source={LOGO} />
 

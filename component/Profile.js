@@ -12,12 +12,12 @@ function profile() {
         <View> 
             
        
-        <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row'}}> 
+        <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:1,flexDirection: 'row'}}> 
 
-        <Image style={styles.profilePic} source={require('../src/ABC_Faishon/0001_fashion_image.jpg')}/>
+        <Image style={styles.profilePic} source={require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg')}/>
        
-       <View style={{padding:25,flex:9,borderWidth:0}}>
-       <Text>EMAIL</Text>
+       <View style={{padding:8,flex:8,borderWidth:1,width:80}}>
+       <Text>fashionparade@gmail.com</Text>
        <Text></Text>
        <Text></Text>
        

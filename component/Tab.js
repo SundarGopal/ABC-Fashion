@@ -3,22 +3,14 @@ import { Text, View, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './Home';
-//import IconAntDesign from 'react-native-vector-icons/MaterialCommunityIcons';
-//import Icon from 'react-native-vector-icons/Ionicons'; 
 import Icon from 'react-native-vector-icons/FontAwesome'; 
-//import { NavigationBar } from '@shoutem/ui'
-//import { Ionicons } from '@expo/vector-icons';
-//mport {Icon} from 'react-native-elements'
+import Profile from './Profile'
+import More from './More'
+import OrderPlaced from './OrderPlaced'
+
 Icon.loadFont()
 
-
-function SearchScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Search Products</Text>
-    </View>
-  );
-}
+import SearchScreen from './SearchScreen/SearchScreen';
 
 function CartScreen() {
   return (
@@ -49,7 +41,7 @@ const Tab = createBottomTabNavigator();
 export default function MyTabs() {
 
   return (
-      <Tab.Navigator>
+      <Tab.Navigator backBehaviour = "initialRoute">
         <Tab.Screen  name="Home" component={Home} 
         
         options={{
@@ -58,7 +50,10 @@ export default function MyTabs() {
            tabBarIcon: ({ color, size }) => (
             <Icon name="home" size={25} />
            ),
-         }}
+            headerShown: false
+         }
+         
+         }
          />
         <Tab.Screen name="Search" component={SearchScreen} 
         options={{
@@ -66,9 +61,10 @@ export default function MyTabs() {
           tabBarIcon: ({ color, size }) => (
            <Icon name="search" size={25}  />
           ),
+          headerShown: false
         }}
         />
-        <Tab.Screen name="Cart" component={CartScreen}
+        <Tab.Screen name="Order Placed" component={OrderPlaced}
         options={{
            tabBarLabel: 'Cart',
            tabBarIcon: ({ color, size }) => (
@@ -76,7 +72,7 @@ export default function MyTabs() {
            ),
          }}
          />
-        <Tab.Screen name="Profile" component={ProfileScreen} 
+        <Tab.Screen name="Profile" component={Profile} 
         options={{
            tabBarLabel: 'Profile',
            tabBarIcon: ({ color, size }) => (
@@ -84,7 +80,7 @@ export default function MyTabs() {
            ),
          }}
          />
-        <Tab.Screen name="More" component={MoreScreen}
+        <Tab.Screen name="More" component={More}
         options={{
            tabBarLabel: 'More',
            tabBarIcon: ({ color, size }) => (

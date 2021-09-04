@@ -2,6 +2,8 @@
 import {StyleSheet} from "react-native"
 
 const styles = StyleSheet.create({
+
+      
     sectionContainer: {
       marginTop: 32,
       paddingHorizontal: 24,
@@ -22,13 +24,36 @@ const styles = StyleSheet.create({
       paddingTop:50
     },
     container: {
-      flex: 1,
-      // justifyContent: 'center',
+      flex:1,
        alignItems: 'center',
       backgroundColor: '#f5f6f8',
       marginTop: "30%",
-    
       
+  },
+  LatestContainer:{
+    flex:1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  LatestTextStyle:{
+    fontSize:32,
+    marginLeft:20
+   
+  },
+  OrderPlacedLogo:{
+    marginBottom:50,
+    height:"50%",
+    width:"50%"
+  },
+  OrderPlacedButton:{
+    backgroundColor: "#FF6969"
+  },
+  imageBackground:{
+    flex: 5,
+    justifyContent: "center",
+    height:"1000%",
+    resizeMode:'cover'
   },
   LoginUpContainer: {
       borderBottomColor: '#F5FCFF',
@@ -116,6 +141,15 @@ const styles = StyleSheet.create({
   },
   spacebetweenloginarrow:{
     paddingLeft:30
+  },
+  card: {
+    shadowColor: 'black',
+    shadowOpacity: 0.26,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 8,
+    elevation: 5,
+    borderRadius: 10,
+    backgroundColor: 'white'
   }
   
   

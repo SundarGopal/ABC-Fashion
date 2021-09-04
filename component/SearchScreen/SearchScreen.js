@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+import {
+    StyleSheet,
+    Text,
+    View,
+    TextInput,
+    Button,
+    TouchableHighlight,
+    Image,
+    Alert,
+    FlatList,
+    style
+} from 'react-native';
+import ProductsOverviewScreen from "../Products/ProductsOverviewScreen"
+import Header from "./Header"
+import styles from '../Styles';
+
+const SearchSreen=()=>{
+
+    return(
+        <View >
+        <Header />
+        <ProductsOverviewScreen />
+
+        </View>
+    )
+    
+}
+
+export default SearchSreen;

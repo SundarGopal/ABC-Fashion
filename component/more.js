@@ -3,7 +3,7 @@ import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpa
 
 //import IconAntDesign from 'react-native-vector-icons/AntDesign'
 
-function profile() {
+function More() {
     return (
        <View style={styles.container}>
         
@@ -53,7 +53,7 @@ function profile() {
     );
   }
 
-export default profile;
+export default More;
 
 
 
