@@ -34,53 +34,66 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
   CartbuttonContainer: {
+    borderBottomColor: '#F5FCFF',
+    backgroundColor: "#FF6969",
+
+    borderBottomEndRadius: 200,
+    borderBottomLeftRadius: 200,
+    borderTopEndRadius: 200,
+    borderTopLeftRadius: 200,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: "#FFFFFF",
     height: 30,
-    width: 140,
+    width: 150,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 15,
 
-    borderRadius: 8,
-    marginTop: 10,
+    
   },
 
-  CartloginButton: {
-    backgroundColor: 'black',
-    fontWeight: '800',
-  },
-  CartloginText: {
-    color: 'white',
-    fontWeight: '800',
-  },
-  Cartdetails: {
-    fontSize: 20,
-    fontFamily: 'Montserrat-ExtraLight',
-  },
+  // CartloginButton: {
+  //   backgroundColor: '#FF6969',
+  //   fontWeight: '800',
+  // },
+ 
+  // Cartdetails: {
+  //   fontSize: 20,
+  //   fontFamily: 'Montserrat-ExtraLight',
+  // },
   CartsubmitButton: {
     position: 'absolute',
     height: 45,
     bottom: 10,
-    left: 230,
+    left: 220,
   },
+  
   CartforTotal: {
     position: 'absolute',
     bottom: 80,
     left: 10,
-    fontSize: 20,
+    fontSize: 10,
   },
   CartforTotal1: {
     position: 'absolute',
-    bottom: 50,
+    bottom: 40,
     left: 10,
-    fontSize: 20,
-  },
-  cartheading: {
-    marginTop: 50,
-    paddingLeft: 20,
     fontSize: 30,
-    fontWeight: '300',
   },
+  CartforTotal2: {
+    position: 'absolute',
+    bottom: 20,
+    left: 10,
+    fontSize: 15,
+  },
+  // cartheading: {
+  //   marginTop: 50,
+  //   paddingLeft: 20,
+  //   fontSize: 30,
+  //   fontWeight: '300',
+  // },
 
   sectionContainer: {
     marginTop: 32,
