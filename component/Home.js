@@ -5,17 +5,17 @@ import {useState} from 'react-native';
 import styles from "./Styles"
 import Carousel from 'react-native-snap-carousel'
 
-export const Apparel = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/Apparel.png')
-export const Beauty = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/Beauty.png')
-export const Shoes = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/Shoes.png')
-export const SeeAll = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/SeeAll.png')
+export const Apparel = require('../../FashionApp/src/Apparel.png')
+export const Beauty = require('../../FashionApp/src/Beauty.png')
+export const Shoes = require('../../FashionApp/src/Shoes.png')
+export const SeeAll = require('../../FashionApp/src/SeeAll.png')
 
-export const Shirt1 = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg')
-export const Shirt2 = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0002_fashion_image.jpg')
-export const Shirt3 = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0003_fashion_image.jpg')
-export const Shirt4 = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0004_fashion_image.jpg')
-export const Shirt5 = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0005_fashion_image.jpg')
-export const Shirt6 = require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0006_fashion_image.jpg')
+export const Shirt1 = require('../../FashionApp/src/tshirt/0001_fashion_image.jpg')
+export const Shirt2 = require('../../FashionApp/src/tshirt/0002_fashion_image.jpg')
+export const Shirt3 = require('../../FashionApp/src/tshirt/0003_fashion_image.jpg')
+export const Shirt4 = require('../../FashionApp/src/tshirt/0004_fashion_image.jpg')
+export const Shirt5 = require('../../FashionApp/src/tshirt/0005_fashion_image.jpg')
+export const Shirt6 = require('../../FashionApp/src/tshirt/0006_fashion_image.jpg')
 
 import IconAntDesign from 'react-native-vector-icons/AntDesign' //ADD Ionicons
 import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD

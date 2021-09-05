@@ -14,9 +14,9 @@ import styles from "./Styles"
 import { getUsers } from '../../services/userstorage'
 import {Icon} from "react-native-elements"
 
-export const TICK=require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/Tick.png')
+export const TICK=require('../../FashionApp/src/Tick.png')
 
-export const CANCEL=require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/Cancel.png')
+export const CANCEL=require('../../FashionApp/src/Cancel.png')
 
 
 

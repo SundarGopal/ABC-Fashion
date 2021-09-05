@@ -51,7 +51,7 @@ function profile() {
        
         <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row'}}> 
 
-        <Image style={styles.profilePic} source={require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg')}/>
+        <Image style={styles.profilePic} source={require('../../FashionApp/src/tshirt/0001_fashion_image.jpg')}/>
        
        <View style={{padding:25,flex:9,borderWidth:0}}>
        <Text>EMAIL</Text>

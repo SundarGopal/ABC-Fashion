@@ -52,7 +52,7 @@ export default function ProductDetail() {
 </View>
 
 <View style={{borderWidth:0,justifyContent:'space-around',alignItems:'center',paddingTop:30,paddingBottom:40}}>
-<Image source={require('/Users/a845596yara.com/workspace/workspace-fashion/FashionApp/src/tshirt/0001_fashion_image.jpg')} style={{height:200,width:150}} />
+<Image source={require('../../../FashionApp/src/tshirt/0001_fashion_image.jpg')} style={{height:200,width:150}} />
 </View>
 
 
