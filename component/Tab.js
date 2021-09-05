@@ -7,33 +7,13 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import Profile from './Profile'
 import More from './More'
 import OrderPlaced from './OrderPlaced'
+import Cart from './CartScreen/Cart'
 
 Icon.loadFont()
 
 import SearchScreen from './SearchScreen/SearchScreen';
 
-function CartScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Cart</Text>
-    </View>
-  );
-}
 
-function ProfileScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Welcome to your Profile</Text>
-    </View>
-  );
-}
-function MoreScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>More!</Text>
-    </View>
-  );
-}
 
 
 const Tab = createBottomTabNavigator();
@@ -64,7 +44,7 @@ export default function MyTabs() {
           headerShown: false
         }}
         />
-        <Tab.Screen name="Order Placed" component={OrderPlaced}
+        <Tab.Screen name="Cart" component={Cart}
         options={{
            tabBarLabel: 'Cart',
            tabBarIcon: ({ color, size }) => (

@@ -3,6 +3,58 @@ import {StyleSheet} from "react-native"
 
 const styles = StyleSheet.create({
 
+  Cartmaincontainer: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+  },
+  CartbuttonContainer: {
+    height: 30,
+    width: 140,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 15,
+
+    borderRadius: 8,
+    marginTop: 10,
+  },
+
+  CartloginButton: {
+    backgroundColor: 'black',
+    fontWeight: '800',
+  },
+  CartloginText: {
+    color: 'white',
+    fontWeight: '800',
+  },
+  Cartdetails: {
+    fontSize: 20,
+    fontFamily: 'Montserrat-ExtraLight',
+  },
+  CartsubmitButton: {
+    position: 'absolute',
+    height: 45,
+    bottom: 10,
+    left: 230,
+  },
+  CartforTotal: {
+    position: 'absolute',
+    bottom: 80,
+    left: 10,
+    fontSize: 20,
+  },
+  CartforTotal1: {
+    position: 'absolute',
+    bottom: 50,
+    left: 10,
+    fontSize: 20,
+  },
+  cartheading: {
+    marginTop: 50,
+    paddingLeft: 20,
+    fontSize: 30,
+    fontWeight: '300',
+  },
       
     sectionContainer: {
       marginTop: 32,
