@@ -35,7 +35,7 @@ const App= () => {
       <Stack.Screen name="Login" component ={Login} options={{headerShown: false}}/>
 
       <Stack.Screen name="ProductDetails" component ={ProductDetails} options={{headerShown: false}} />
-      <Stack.Screen name="Order Placed" component ={OrderPlaced} options={{headerShown: false}}/>
+      <Stack.Screen name="OrderPlaced" component ={OrderPlaced} options={{headerShown: false}}/>
 
   
 

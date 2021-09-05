@@ -32,7 +32,7 @@ export default function Home() {
         
         <View style={{alignItems:'flex-end'}}>
         
-        <View style={{ padding:20 ,flexDirection:'row'}}>
+        <View style={{ paddingRight:20 ,flexDirection:'row'}}>
         <TouchableOpacity>
         <View style={{ paddingRight:20}}>
         <IconAntDesign name='message1' size ={30} color='black'
@@ -92,7 +92,7 @@ export default function Home() {
         <Text style={{marginLeft: 30,fontSize: 20,justifyContent: 'center'}}> See All </Text>
         </View>
 
-        <Text style={{fontSize:40,fontWeight: 'bold',marginLeft: 20,marginTop:10}} >Latest</Text>
+        <Text style={{fontSize:40,fontWeight: 'bold',marginLeft: 20,marginTop:10,paddingBottom:10}} >Latest</Text>
 {/*         <View style={{height:"10%"}}>
           <ImageBackground source={Shirt1} style ={styles.imageBackground} >     
           <Text style={styles.LatestTextStyle}>Hello</Text>

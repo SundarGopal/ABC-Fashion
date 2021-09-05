@@ -42,7 +42,7 @@ export default class OrderPlaced extends Component {
         return (
   
             <View>
-                <View>
+                <View style={{marginTop: 30}}>
                 <TouchableOpacity onPress={() => this.onOrderCancelButton()}>
                 <View style={{alignItems:'center', marginTop:10, marginLeft:290,paddingLeft:50}}>
                 <Image style={{ height: 30,borderRadius:200, width:60}} source={CANCEL} />
