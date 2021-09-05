@@ -21,24 +21,9 @@ import {getProducts, getCart} from '../services/productstorage'
 export const ARROW = require('../src/ARROW.png')
 IconAntDesign.loadFont()
 
-const checkout = navigation => {
-    Alert.alert(
-        'Are you sure ',
-        'You want to Place order',
 
-        [
-            { text: 'Yes', onPress: () => navigation.navigate('OrderPlaced') },
-            {
-                text: 'No',
-                onPress: () => console.log('No button clicked'),
-                style: 'cancel',
-            },
-        ],
-        {
-            cancelable: true,
-        },
-    );
-};
+
+
 
 
 
@@ -47,14 +32,15 @@ const checkout = navigation => {
     const [count,setCount] = useState(1);
     
     function Counter (){
-        const initialCount = 0
         return(
             <View style={{flexDirection:'row',alignItems:'flex-start',borderWidth:0,paddingTop:10}}>
                 
                 <TouchableOpacity onPress={()=>{
-                    if(count>0)
-                    {setCount(count-1)} 
-                    else{setCount(0)} 
+                    if(count==0)
+                    {checkout('')}
+                    else{
+                        setCount(count-1)   
+                    }
                 }}>
                 <IconAntDesign name='minuscircleo' size={20} color='gray' style={{ paddingRight: 5, marginLeft: 0, borderWidth: 0 }} />
                     </TouchableOpacity>
@@ -67,7 +53,26 @@ const checkout = navigation => {
     }
 
 
-    let navigation = useNavigation();
+    let navigation = useNavigation();  
+
+    const checkout = () => {
+        Alert.alert(
+            'Are you sure ',
+            'You want to delete',
+    
+            [
+                { text: 'Yes', onPress: () => navigation.navigate('Home') },
+                {
+                    text: 'No',
+                    onPress: () => console.log('No button clicked'),
+                    style: 'cancel',
+                },
+            ],
+            {
+                cancelable: true,
+            },
+        );
+    };
 
 
    let  onOrderPlacedButton = () => {
@@ -91,7 +96,6 @@ const checkout = navigation => {
     //console.log(product_id)
         return (
 
-      
             
             <View style={{backgroundColor:'#F5F5F5',flex:1,borderWidth:0}}>
 
@@ -129,7 +133,7 @@ const checkout = navigation => {
         
             <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row',height:150,backgroundColor:'#F5F5F5'}}>
             
-            <Image style={{width:130,height:130,borderRadius:200,resizeImage:'contain'}} source={productProperty.url}/>
+            <Image style={{width:130,height:130,borderRadius:200,resizeMode:'contain'}} source={productProperty.url}/>
             <View style={{borderWidth:0,paddingLeft:15}}> 
             <Text style={{fontSize:18,color:'#636976'}}>{productProperty.name}</Text>
             <Text style={{fontSize:16,color:'#636976'}}>{productProperty.color}</Text>
@@ -145,7 +149,7 @@ const checkout = navigation => {
             <Text style={styles.cartText2}>${productProperty.rate*count}</Text>
             <Text style={styles.cartText3}>Free Domestic Shipping</Text>
             <TouchableOpacity style={styles.CartbuttonContainer}
-        onPress={() => checkout(navigation.navigate('OrderPlaced',{}))}>  
+        onPress={() => navigation.navigate('OrderPlaced',{})}>  
                 <View style={{flex:1,flexDirection:'row', alignItems: 'center'}}>
                     <Text style={{color: 'white', fontSize: 15,fontWeight:'bold',marginLeft:20}}>CHECKOUT</Text>
                     <Image style={{marginLeft:30}} source={ARROW} />
