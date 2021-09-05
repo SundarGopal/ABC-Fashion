@@ -4,6 +4,7 @@ import { Text, View,SafeAreaView, ScrollView, Image,Batch, TouchableOpacity,Imag
 import {useState} from 'react-native';
 import styles from "./Styles"
 import Carousel from 'react-native-snap-carousel'
+import {Icon, Badge} from 'react-native-elements'
 
 export const Apparel = require('../../FashionApp/src/Apparel.png')
 export const Beauty = require('../../FashionApp/src/Beauty.png')
@@ -28,37 +29,33 @@ IconIonicons.loadFont()  //ADD
 export default function Home() {
     return (
       <SafeAreaView style={{backgroundColor:"white",flex:1}}>
-        
+      <ScrollView style={{height:'60%'}}>  
         
         <View style={{alignItems:'flex-end'}}>
         
         <View style={{ paddingRight:20 ,flexDirection:'row'}}>
         <TouchableOpacity>
         <View style={{ paddingRight:20}}>
-        <IconAntDesign name='message1' size ={30} color='black'
-                options={{
-                  tabBarIcon: () => (
-                 <Batch 
-                   value={2}
-                 />
-                  ),
-                }}
-        />
+        <IconAntDesign name='message1' size ={30} color='black'/>
+        <Badge value="7" status="error" containerStyle={{ position: 'absolute', top:0, right:10 }} />
+        
+
         </View>
         </TouchableOpacity>
         <TouchableOpacity>
         <View style={{ paddingRight:5}}>
         <IconAntDesign name='notification' size ={30} color='black'/>
+        <Badge value="15" status="error" containerStyle={{ position: 'absolute', top:0, right:-5 }} />
         </View>
         </TouchableOpacity>
         </View>
         </View>
 
-        <ScrollView style={{height:'60%'}}>
+        
 
         <Text style={{marginLeft: 20,fontSize: 40,fontWeight:'bold',justifyContent: 'center'}}>Categories</Text>
         <Text></Text>
-        <View style={{flexDirection:'row',width:'auto'}}>
+        <View style={{flexDirection:'row',width:'auto',justifyContent:'space-evenly'}}>
         <TouchableOpacity>
         <View>
         <Image style={styles.categoryIcon} source={Apparel} />
@@ -85,7 +82,7 @@ export default function Home() {
          
           </View>
         <Text> </Text>
-        <View style={{flexDirection:'row',alignItems:'center'}}>
+        <View style={{flexDirection:'row',alignItems:'center',justifyContent: 'space-evenly'}}>
         <Text style={styles.categoryText}> Apparel </Text>
         <Text style={styles.categoryText}>Beauty </Text>
         <Text style={{marginLeft: 30,fontSize: 20,justifyContent: 'center'}}> Shoes </Text>

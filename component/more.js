@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,ScrollView} from "react-native";
 
 import { useNavigation } from '@react-navigation/core';
+import {Icon, Badge} from 'react-native-elements';
 
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
 import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD
@@ -25,13 +26,14 @@ function More() {
     <View style={{borderWidth:0,justifyContent:'space-between',alignItems:'center',height:90,flexDirection:'row',paddingTop:50}}>
     
     <TouchableOpacity onPress={()=>{navigation.navigate('Home',{})}}>
-    <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,borderWidth:0}}/>
+    <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,marginLeft:10,borderWidth:0}}/>
     </TouchableOpacity>
     <View style={{alignItems:'flex-end',paddingTop:0,borderWidth:0}}>
         <View>
         <TouchableOpacity>
         <View style={{ paddingRight:20}}>
         <IconAntDesign name='shoppingcart' size ={30} color='black'/>
+        <Badge value="5" status="error" containerStyle={{ position: 'absolute', top:0, right:10 }} />
         </View>
         </TouchableOpacity>
         </View>

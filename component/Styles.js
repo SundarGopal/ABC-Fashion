@@ -203,12 +203,12 @@ const styles = StyleSheet.create({
     marginBottom: 40
   },
   loginButton: {
-    backgroundColor: "#FF6969",
+    backgroundColor: "#FF6969"
 
   },
   loginText: {
     color: 'white',
-    fontSize: 20,
+    fontSize: 20
 
 
   },

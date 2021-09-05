@@ -5,13 +5,20 @@ import {
     View,
     TextInput,
     Button,
+    TouchableOpacity,
     TouchableHighlight,
     Image,
     Alert
 } from 'react-native';
+import { useNavigation } from '@react-navigation/core';
 import {addUser} from '../services/userstorage'
+import IconAntDesign from 'react-native-vector-icons/AntDesign'
+
+IconAntDesign.loadFont()
+
 
 const AddUser = (props) => {
+    let navigation = useNavigation()
     const [name, onChangeName] = React.useState('');
     const [password, onChangePassword] = React.useState('');
     
@@ -26,7 +33,18 @@ const AddUser = (props) => {
     }
 
         return (
-            <View style={styles.container}>
+    
+        
+
+            <View style={{flex: 1, alignItems: 'center',backgroundColor: '#f5f6f8'}}>
+                <View style={{borderWidth:0,justifyContent:'flex-start',alignItems:'center',height:90,width:"100%",flexDirection:'row',paddingTop:50}}>
+    
+                <TouchableOpacity onPress={()=>{navigation.navigate('Login',{})}}>
+            
+                <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,marginLeft:10,borderWidth:0}}/>
+                </TouchableOpacity>
+                </View>
+                <Text style={{fontSize: 25,color:'gray',fontWeight:'bold',paddingLeft:10 }}>Add User</Text>
                 <View style={styles.topInput}>
                     <TextInput style={styles.inputs}
                         placeholder="Username"
@@ -43,9 +61,14 @@ const AddUser = (props) => {
                         onChangeText={onChangePassword} />
                 </View>
 
-                <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() => addToUser()}>
-                    <Text style={styles.loginText}>Create User</Text>
-                </TouchableHighlight>
+                <TouchableHighlight style={{height: 45,flexDirection: 'row',justifyContent: 'center', alignItems: 'center',marginTop: 10,marginLeft:10,width: "70%",
+      borderRadius: 30, backgroundColor: "#FF6969"}} onPress={() => addToUser()}>
+                    <View style={{flexDirection:'row',borderWidth:0,justifyContent:'flex-end',width:250,alignItems:'center' }} >
+                    <Text style={{    color: 'white', fontSize: 20,borderWidth:0,paddingRight:70}}>Create User</Text>
+                    </View>
+                    
+                    </TouchableHighlight>
+
             </View>
         );
 }

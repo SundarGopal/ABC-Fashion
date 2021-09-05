@@ -40,7 +40,7 @@ const App= () => {
   
 
     
-      <Stack.Screen name="Add User" component={AddUser}/>
+      <Stack.Screen name="Add User" component={AddUser} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

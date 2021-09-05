@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from "react";
 import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,Button ,ScrollView} from "react-native";
 
+import {Icon,Badge} from 'react-native-elements'
+
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
 import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD
 import IconMaterialIcons from 'react-native-vector-icons/MaterialIcons' //ADD
@@ -26,18 +28,21 @@ function profile() {
        <ScrollView>
       <View style={{borderWidth:0,justifyContent:'space-between',alignItems:'center',height:90,flexDirection:'row',paddingTop:50}}>
       <TouchableOpacity onPress={()=>{navigation.navigate('Home',{})}}>
-      <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,borderWidth:0}}/>
+      <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,marginLeft:10,borderWidth:0}}/>
       </TouchableOpacity>
       <View style={{alignItems:'flex-end',paddingTop:0,borderWidth:0}}>
         <View style={{flexDirection:'row'}}>
         <TouchableOpacity>
         <View style={{ paddingRight:20}}>
         <IconAntDesign name='message1' size ={30} color='black'/>
+        <Badge value="7" status="error" containerStyle={{ position: 'absolute', top:0, right:10 }} />
+
         </View>
         </TouchableOpacity>
         <TouchableOpacity>
         <View style={{ paddingRight:20}}>
         <IconAntDesign name='notification' size ={30} color='black'/>
+        <Badge value="15" status="error" containerStyle={{ position: 'absolute', top:0, right:10 }} />
         </View>
         </TouchableOpacity>
         </View>
@@ -51,10 +56,10 @@ function profile() {
        
         <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row'}}> 
 
-        <Image style={styles.profilePic} source={require('../../FashionApp/src/tshirt/0001_fashion_image.jpg')}/>
+        <Image style={styles.profilePic} source={require('../../FashionApp/src/Profile_pic.png')}/>
        
        <View style={{padding:25,flex:9,borderWidth:0}}>
-       <Text>EMAIL</Text>
+       <Text>Rene Sousze</Text>
        <Text></Text>
        <Text></Text>
        
@@ -85,7 +90,7 @@ function profile() {
 
         <TouchableOpacity style={styles.Clicktabs}>
         <View style={styles.leftIcon}>   
-        <IconMaterialIcons name='pending-actions' size ={25} color='grey'/>
+        <IconMaterialIcons name='local-shipping' size ={25} color='grey'/>
         </View>
         <View style={{borderWidth:0,paddingRight:110}}>
         <Text style={styles.text} >Pending Shipments</Text>
@@ -99,7 +104,7 @@ function profile() {
 
         <TouchableOpacity style={styles.Clicktabs}>
         <View style={styles.leftIcon}>   
-        <IconMaterialCommunityIcons name='credit-card-clock-outline' size ={20} color='grey'/>
+        <IconMaterialIcons name='payment' size ={20} color='grey'/>
         </View>
         <View style={{borderWidth:0,paddingRight:115}}>
         <Text style={styles.text} >Pending Payments</Text>

@@ -35,9 +35,22 @@ export default ProductDetail = props => {
                         <IconAntDesign name='left' size={30} color='red' style={{ paddingRight: 50, borderWidth: 0 }} />
                     </TouchableOpacity>
 
-                    <View style={{ borderWidth: 0, paddingRight: 50, justifyContent: 'center', alignItems: 'center' }}>
-                        <Text style={{ fontSize: 18 }}>{property.productTitle}</Text>
-                        <Text style={{ fontSize: 16 }}>{productProperty.rate} - {productProperty.rating}</Text>
+                    <View style={{ borderWidth:0, paddingRight: 50, justifyContent: 'center', alignItems: 'center' }}>
+                        <View style={{flexDirection: 'row'}}>
+                        
+                        <Text style={{ fontSize: 18,color:'gray',fontWeight:'bold',paddingLeft:20 }}>{property.productTitle}</Text>
+                        <Text style={{ fontSize: 18,color:'gray',fontWeight:'bold' }}>-{productProperty.color}</Text>
+                        </View>
+        
+                        <View style={{borderWidth:0,flexDirection:'row'}} >
+                        <Text style={{ fontSize: 16,fontWeight:'bold',paddingLeft:10 }}>${productProperty.rate}  </Text>
+                        
+                        <View style={{borderWidth:0,backgroundColor:'#FF6969',borderRadius:10,width:55,height:25,flexDirection:'row',alignItems: 'center',justifyContent:'center'}}>
+                        <IconAntDesign name='star' size={15} color={'white'}/>
+                        <Text style={{color:'white',fontWeight:'bold'}} > {productProperty.rating}</Text>
+                        </View>
+                    </View>
+                    
                     </View >
                     <View style={{ alignItems: 'flex-end', paddingTop: 0, borderWidth: 0 }}>
                         <View>

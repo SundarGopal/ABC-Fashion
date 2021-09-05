@@ -18,6 +18,8 @@ export const TICK=require('../../FashionApp/src/Tick.png')
 
 export const CANCEL=require('../../FashionApp/src/Cancel.png')
 
+export const ARROW = require('../../FashionApp/src/ARROW.png')
+
 
 
 
@@ -31,7 +33,7 @@ export default class OrderPlaced extends Component {
     };
 
     onOrderPlacedButton = () => {
-        this.props.navigation.navigate('Home', { });
+        this.props.navigation.navigate('Search', { });
     }
 
     onOrderCancelButton = () => {
@@ -44,7 +46,7 @@ export default class OrderPlaced extends Component {
             <View>
                 <View style={{marginTop: 30}}>
                 <TouchableOpacity onPress={() => this.onOrderCancelButton()}>
-                <View style={{alignItems:'center', marginTop:10, marginLeft:290,paddingLeft:50}}>
+                <View style={{alignItems:'center', marginTop:10, marginLeft:270,marginTop:40,paddingLeft:50}}>
                 <Image style={{ height: 30,borderRadius:200, width:60}} source={CANCEL} />
                 </View>
                 </TouchableOpacity>
@@ -71,10 +73,11 @@ export default class OrderPlaced extends Component {
 
                 <TouchableHighlight style={{height: 45,flexDirection: 'row',justifyContent: 'center', alignItems: 'center',marginBottom: 20,marginLeft:50,width: "80%",
       borderRadius: 30, backgroundColor: "#FF6969"}} onPress={() => this.onOrderPlacedButton()}>
-                    <Text >
-                    <Text style={styles.loginText}>ORDER MORE</Text>
+                    <View style={{flexDirection:'row',borderWidth:0,justifyContent:'flex-end',width:250,alignItems:'center' }} >
+                    <Text style={{    color: 'white', fontSize: 20,borderWidth:0,paddingRight:50}}>ORDER MORE</Text>
+                    <Image style={{right:0,borderWidth:0,paddingTop:0}} source={ARROW} />
 
-                    </Text>
+                    </View>
                     
                 </TouchableHighlight>
 

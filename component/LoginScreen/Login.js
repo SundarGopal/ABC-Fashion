@@ -94,14 +94,27 @@ export default class Login extends Component {
                         onChangeText={(password) => this.setState({ password })} />
                 </View>
 
-                <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.onLoginButton()}>
-                    <Text >
-                    <Text style={styles.loginText}>LOG IN</Text>
-                    {/* <Image source={ARROW} /> */}
-                    {/* <Icon name='arrow-right-bold-circle'/> */}
-                    </Text>
+                <TouchableHighlight style={{height: 45,flexDirection: 'row',justifyContent: 'center', alignItems: 'center',marginBottom: 20,marginLeft:10,width: "80%",
+      borderRadius: 30, backgroundColor: "#FF6969"}} onPress={() => this.onLoginButton()}>
+                    <View style={{flexDirection:'row',borderWidth:0,justifyContent:'flex-end',width:250,alignItems:'center' }} >
+                    <Text style={{    color: 'white', fontSize: 20,borderWidth:0,paddingRight:70}}>LOG IN</Text>
+                    <Image style={{right:0,borderWidth:0,paddingTop:0}} source={ARROW} />
+                    </View>
                     
-                </TouchableHighlight>
+                    </TouchableHighlight>
+
+{/*                 <TouchableHighlight style={{height: 45,flexDirection: 'row',justifyContent: 'space-evenly', alignItems: 'center',
+                marginBottom: 20, width: "80%", borderRadius: 30,backgroundColor: "#FF6969",borderWidth:0}} onPress={() => this.onLoginButton()}>
+                   
+                    <View style={{borderWidth:0,flexDirection:'row',width: "90%",justifyContent:'center',alignItems:'center'}}>
+                    
+                    <Text style={{marginLeft:90,color: 'white',fontSize: 20, borderWidth:0,justifyContent:'center',alignItem:'center',paddingRight:90,fontWeight:'bold'}}>LOG IN</Text>
+                    <Text style={{borderWidth:0,paddingBottom:0}} >
+                    <Image style={{right:0,borderWidth:0,paddingTop:0}} source={ARROW} />
+                    </Text>
+                    </View>
+                
+                </TouchableHighlight> */}
 
                 
 
