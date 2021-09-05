@@ -27,7 +27,7 @@ IconIonicons.loadFont()  //ADD
 
 export default function Home() {
     return (
-      <SafeAreaView style={{backgroundColor:"#F5F5F5",flex:1}}>
+      <SafeAreaView style={{backgroundColor:"white",flex:1}}>
         
         
         <View style={{alignItems:'flex-end'}}>

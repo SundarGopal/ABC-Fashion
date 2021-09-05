@@ -18,7 +18,7 @@ import styles from '../Styles';
 const SearchSreen=()=>{
 
     return(
-        <View style={{marginTop:30}}>
+        <View style={{backgroundColor:'white',}}>
         <Header />
         <ProductsOverviewScreen />
 

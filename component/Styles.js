@@ -1,8 +1,34 @@
 
-import {StyleSheet} from "react-native"
+import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
 
+  searchpageSection: {
+    flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f1f2f3',
+    borderRadius: 20,
+
+    height: "90%",
+
+  },
+  searchpageIcon: {
+    padding: 10,
+  },
+  searchpageinput: {
+    flex: 1,
+    paddingTop: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    paddingLeft: 0,
+    backgroundColor: '#f1f2f3',
+
+    borderRadius: 20,
+    color: '#515c6f',
+    width: "50%"
+  },
   Cartmaincontainer: {
     flex: 1,
     backgroundColor: '#ffffff',
@@ -55,107 +81,107 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: '300',
   },
-      
-    sectionContainer: {
-      marginTop: 32,
-      paddingHorizontal: 24,
-    },
-    sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
-    },
-    sectionDescription: {
-      marginTop: 8,
-      fontSize: 18,
-      fontWeight: '400',
-    },
-    highlight: {
-      fontWeight: '700',
-    },
-    view:{
-      paddingTop:50
-    },
-    container: {
-      flex:1,
-       alignItems: 'center',
-      backgroundColor: '#f5f6f8',
-      marginTop: "30%",
-      
+
+  sectionContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
   },
-  LatestContainer:{
-    flex:1,
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    marginTop: 8,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  highlight: {
+    fontWeight: '700',
+  },
+  view: {
+    paddingTop: 50
+  },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#f5f6f8',
+    marginTop: "30%",
+
+  },
+  LatestContainer: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
   },
-  LatestTextStyle:{
-    fontSize:32,
-    marginLeft:20
-   
+  LatestTextStyle: {
+    fontSize: 32,
+    marginLeft: 20
+
   },
-  OrderPlacedLogo:{
-    marginBottom:50,
-    height:"50%",
-    width:"50%"
+  OrderPlacedLogo: {
+    marginBottom: 50,
+    height: "50%",
+    width: "50%"
   },
-  OrderPlacedButton:{
+  OrderPlacedButton: {
     backgroundColor: "#FF6969"
   },
-  imageBackground:{
+  imageBackground: {
     flex: 5,
     justifyContent: "center",
-    height:"1000%",
-    resizeMode:'cover'
+    height: "1000%",
+    resizeMode: 'cover'
   },
   LoginUpContainer: {
-      borderBottomColor: '#F5FCFF',
-      backgroundColor: '#FFFFFF',
-     
-      borderBottomEndRadius:0,
-      borderBottomLeftRadius:0,
-      borderTopEndRadius:30,
-      borderTopLeftRadius:30,
+    borderBottomColor: '#F5FCFF',
+    backgroundColor: '#FFFFFF',
 
-      borderBottomWidth: 1,
-      width: "80%",
-      height: "8%",
-      
-      flexDirection: 'row',
-      alignItems: 'center',
-      borderColor:"#FFFFFF"
+    borderBottomEndRadius: 0,
+    borderBottomLeftRadius: 0,
+    borderTopEndRadius: 30,
+    borderTopLeftRadius: 30,
+
+    borderBottomWidth: 1,
+    width: "80%",
+    height: "8%",
+
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: "#FFFFFF"
   },
   LoginDownContainer: {
     borderBottomColor: '#F5FCFF',
     backgroundColor: '#FFFFFF',
 
-    borderBottomEndRadius:30,
-    borderBottomLeftRadius:30,
-    borderTopEndRadius:0,
-    borderTopLeftRadius:0,
-    
+    borderBottomEndRadius: 30,
+    borderBottomLeftRadius: 30,
+    borderTopEndRadius: 0,
+    borderTopLeftRadius: 0,
+
     borderBottomWidth: 1,
     width: "80%",
     height: "8%",
     marginBottom: 20,
     flexDirection: 'row',
     alignItems: 'center',
-    borderColor:"#FFFFFF"
-},
+    borderColor: "#FFFFFF"
+  },
   inputs: {
-      height: 45,
-      marginLeft: 16,
-      borderBottomColor: '#FFFFFF',
-      flex: 1,
+    height: 45,
+    marginLeft: 16,
+    borderBottomColor: '#FFFFFF',
+    flex: 1,
   },
   inputIcon: {
-      width: 30,
-      height: 30,
-      marginLeft: 15,
-      justifyContent: 'center'
+    width: 30,
+    height: 30,
+    marginLeft: 15,
+    justifyContent: 'center'
   },
-  categoryIcon:{
-    width :80, 
-    height:80, 
+  categoryIcon: {
+    width: 80,
+    height: 80,
     marginLeft: 15,
     justifyContent: 'center'
   },
@@ -165,34 +191,34 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   buttonContainer: {
-      height: 45,
-      flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginBottom: 20,
-      width: "80%",
-      borderRadius: 30,
+    height: 45,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20,
+    width: "80%",
+    borderRadius: 30,
   },
-  LoginLogo:{
-    marginBottom:40
+  LoginLogo: {
+    marginBottom: 40
   },
   loginButton: {
-      backgroundColor: "#FF6969",
-      
+    backgroundColor: "#FF6969",
+
   },
   loginText: {
-      color: 'white',
-      fontSize:20,
-     
-      
-  },
-  addcustomerlink:{
+    color: 'white',
+    fontSize: 20,
 
-    color:'#FF6969'
 
   },
-  spacebetweenloginarrow:{
-    paddingLeft:30
+  addcustomerlink: {
+
+    color: '#FF6969'
+
+  },
+  spacebetweenloginarrow: {
+    paddingLeft: 30
   },
   card: {
     shadowColor: 'black',
@@ -203,10 +229,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: 'white'
   }
-  
-  
-    
-  });
 
-  
-  export default styles;
+
+
+});
+
+
+export default styles;
