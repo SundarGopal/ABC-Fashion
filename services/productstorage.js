@@ -35,6 +35,9 @@ var products =[
   ];
 
 
+  let cart = {id:3,url:require('../../FashionApp/src/tshirt/0003_fashion_image.jpg'),name:"V Neck Shirt",rate:"26.99",rating:"4.6",color:"Brown"}
+            
+
 
 export var getProducts = ()=>{
     return products;
@@ -88,3 +91,9 @@ export var getProductByRating = (rating) =>{
         return {}
    }
 }
+
+export var getCart = ()=>{ 
+
+    return cart;
+}
+

@@ -17,7 +17,7 @@ const Header = () => {
 
 
   return (
-    <View style={{flexDirection:'row',height:"5%",backgroundColor:'white',marginBottom:10,marginTop:50}}>
+    <View style={{flexDirection:'row',height:"5%",backgroundColor:'white',marginBottom:5,marginTop:50}}>
   
     <TouchableOpacity onPress={()=>{navigation.navigate('Home',{})}}>
     <IconAntDesign name='left' size ={30} color='red' style={{paddingLeft:10,paddingRight:10,borderWidth:0}}/>
