@@ -30,7 +30,8 @@ const App= () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-      <Stack.Screen name="Tab" component ={Tab} options={{headerShown: false}}/>
+       <Stack.Screen name="Tab" component ={Tab} options={{headerShown: false}}/> 
+      
    
       <Stack.Screen name="Login" component ={Login} options={{headerShown: false}}/>
 

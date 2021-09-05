@@ -18,6 +18,8 @@ export const Shirt4 = require('../../FashionApp/src/tshirt/0004_fashion_image.jp
 export const Shirt5 = require('../../FashionApp/src/tshirt/0005_fashion_image.jpg')
 export const Shirt6 = require('../../FashionApp/src/tshirt/0006_fashion_image.jpg')
 
+import { useNavigation } from '@react-navigation/core'; //NAVIGATION
+
 import IconAntDesign from 'react-native-vector-icons/AntDesign' //ADD Ionicons
 import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD
 import Slider from './Carousel'
@@ -27,6 +29,21 @@ IconIonicons.loadFont()  //ADD
 
 
 export default function Home() {
+
+
+
+  let navigation = useNavigation();
+
+  const selectItemHandler = (id) => {
+
+    navigation.navigate('ProductDetails', {
+      productId: id
+    });
+  };
+
+
+
+
     return (
       <SafeAreaView style={{backgroundColor:"white",flex:1}}>
       <ScrollView style={{height:'60%'}}>  
@@ -100,52 +117,64 @@ export default function Home() {
         </View>
         <View>
         
+        
         <View style={styles_new.container}>
         
+        <TouchableOpacity onPress={() => { selectItemHandler(1)}}>
         <View style={styles_new.container2}>
         <Image source={Shirt1} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
         <Text style={styles_new.text}> $24.99</Text>
         </View>
-        
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => { selectItemHandler(2)}}>
         <View style={styles_new.container2}>
         <Image source={Shirt2} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
         <Text style={styles_new.text}> $24.99</Text>
         </View>
-        
+        </TouchableOpacity>
         </View>
 
         <View style={styles_new.container}>
         
+        <TouchableOpacity onPress={() => { selectItemHandler(3)}}>
         <View style={styles_new.container2}>
         <Image source={Shirt3} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
         <Text style={styles_new.text}> $24.99</Text>
         </View>
+        </TouchableOpacity>
         
+        <TouchableOpacity onPress={() => { selectItemHandler(4)}}>
         <View style={styles_new.container2}>
         <Image source={Shirt4} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
         <Text style={styles_new.text}> $24.99</Text>
         </View>
-        
+        </TouchableOpacity>
+
         </View>
 
         <View style={styles_new.container}>
         
+        <TouchableOpacity onPress={() => { selectItemHandler(5)}}>
         <View style={styles_new.container2}>
         <Image source={Shirt5} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
         <Text style={styles_new.text}> $24.99</Text>
         </View>
-        
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => { selectItemHandler(6)}}>
         <View style={styles_new.container2}>
         <Image source={Shirt6} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
         <Text style={styles_new.text}> $24.99</Text>
         </View>
-        
+        </TouchableOpacity>
+
         </View>
 
         </View>

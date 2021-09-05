@@ -19,14 +19,16 @@ const ProductsOverviewScreen= (props) => {
     return(
   
         <FlatList 
+        numColumns={3}
         data={getProducts()}
         keyExtractor={item => item.id}
         renderItem={itemData => (
         <ProductItem
-          url={itemData.item.url}
-          name={itemData.item.name}
-          rate={itemData.item.rate}
-          id={itemData.item.id}
+        url={itemData.item.url}
+        name={itemData.item.name}
+        rate={itemData.item.rate}
+        rating={itemData.item.rating}
+        id={itemData.item.id}
         ></ProductItem>
         
         )}
