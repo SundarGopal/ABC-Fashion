@@ -47,7 +47,7 @@ const ProductItem = props => {
                 
                 <View>
                     <View>
-                      <Image source={require('../../../FashionApp/src/tshirt/0001_fashion_image.jpg') } /> 
+                      <Image source={props.url} /> 
 {/*                      <Img src=
                      {require('../src/tshirt/0001_fashion_image.jpg') }/> */}
                     </View>
