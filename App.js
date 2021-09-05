@@ -23,6 +23,7 @@ import Home from './component/Home'
 import More from './component/More'
 import OrderPlaced from './component/OrderPlaced'
 import ProductDetails from './component/Products/ProductDetails';
+import Cart from './component/Cart1';
 const Stack = createStackNavigator();
 
 const App= () => {
@@ -37,6 +38,7 @@ const App= () => {
 
       <Stack.Screen name="ProductDetails" component ={ProductDetails} options={{headerShown: false}} />
       <Stack.Screen name="OrderPlaced" component ={OrderPlaced} options={{headerShown: false}}/>
+      <Stack.Screen name="Cart1" component ={Cart} options={{headerShown: false}}/>
 
   
 

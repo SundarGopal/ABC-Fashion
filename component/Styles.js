@@ -51,21 +51,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 15,
-
-    
-  },
-
-  CartloginButton: {
-    backgroundColor: 'black',
-    fontWeight: '800',
-  },
-  CartloginText: {
-    color: 'white',
-    fontWeight: '800',
-  },
-  Cartdetails: {
-    fontSize: 20,
-    fontFamily: 'Montserrat-ExtraLight',
   },
   CartsubmitButton: {
     position: 'absolute',
@@ -77,25 +62,19 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 80,
     left: 10,
-    fontSize: 20,
+    fontSize: 10,
   },
   CartforTotal1: {
     position: 'absolute',
-    bottom: 50,
+    bottom: 40,
     left: 10,
-    fontSize: 20,
+    fontSize: 30,
   },
   CartforTotal2: {
     position: 'absolute',
     bottom: 20,
     left: 10,
     fontSize: 15,
-  },
-  cartheading: {
-    marginTop: 50,
-    paddingLeft: 20,
-    fontSize: 30,
-    fontWeight: '300',
   },
 
   sectionContainer: {

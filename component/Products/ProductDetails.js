@@ -357,7 +357,7 @@ export default ProductDetail = props => {
                         </Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.buttonContainer2}>
+                    <TouchableOpacity style={styles.buttonContainer2} onPress={()=>{navigation.navigate('Cart1',{prod_id:productProperty.id})}}>
                         <Text style={{ paddingLeft: 20, paddingRight: 5, paddingBottom: 0, borderWidth: 0 }}>
                             <Text style={{ fontWeight: 'bold', color: 'white' }}>ADD TO CART</Text>
                         </Text>

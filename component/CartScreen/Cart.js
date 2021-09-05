@@ -9,13 +9,16 @@ import {
   View,
   Image, FlatList
 } from 'react-native';
+import { useNavigation } from '@react-navigation/core';
+import {Icon, Badge} from 'react-native-elements';
+import IconAntDesign from 'react-native-vector-icons/AntDesign'
 import {
   getProductByRate,
   getProductByName,
   getProducts,
 } from './services/productstorage';
+IconAntDesign.loadFont()
 
-import {useNavigation} from '@react-navigation/native';
 import styles from '../Styles';
 import { Dimensions } from "react-native";
 
@@ -57,19 +60,40 @@ const win = Dimensions.get('window');
 const Item = ({ item,  onPress,style }) => (
   
 
+  <View style={{borderWidth:0,justifyContent:'space-between',alignItems:'center',height:90,flexDirection:'row',paddingTop:50}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Home',{})}}>
+      <IconAntDesign name='left' size ={30} color='red' style={{paddingRight:50,marginLeft:10,borderWidth:0}}/>
+      </TouchableOpacity>
+      <View style={{alignItems:'flex-end',paddingTop:0,borderWidth:0}}>
+        <View style={{flexDirection:'row'}}>
+        <TouchableOpacity>
+        <View style={{ paddingRight:20}}>
+        <IconAntDesign name='message1' size ={30} color='black'/>
+        <Badge value="7" status="error" containerStyle={{ position: 'absolute', top:0, right:10 }} />
+
+        </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+        <View style={{ paddingRight:20}}>
+        <IconAntDesign name='notification' size ={30} color='black'/>
+        <Badge value="15" status="error" containerStyle={{ position: 'absolute', top:0, right:10 }} />
+        </View>
+        </TouchableOpacity>
+        </View>
+        </View>
 
   
   <TouchableOpacity onPress={onPress} style={[styles.item, style]}>
-       <View style={{flexDirection: 'row'}}>
+      <View style={{flexDirection: 'row'}}>
       <Image style={{
-    width: win.width/2,
-    height: win.width/2,
-    resizeMode: "contain",
-    alignSelf: "center",
-    flex:1,
-    borderWidth: 0,
-    borderRadius: 100,
-  }} source={require('../../src/tshirt/0005_fashion_image.jpg')}/>
+      width: win.width/2,
+      height: win.width/2,
+      resizeMode: "contain",
+      alignSelf: "center",
+      flex:1,
+      borderWidth: 0,
+      borderRadius: 100,
+  }}source={require('../../src/tshirt/0005_fashion_image.jpg')}/>
       
       <View style={{flex:2,  height: 20}} >
       <Text style={styles.title}>{item.title}</Text>
@@ -83,10 +107,10 @@ const Item = ({ item,  onPress,style }) => (
               
 
        
-        <View style={{
+       <View style={{
             flex: 1,
             flexDirection: 'row', }}>
-              <TouchableHighlight
+    <TouchableHighlight
         style={{backgroundColor: "#B2BEB5",
         height: 30,
         justifyContent: 'center',
@@ -99,6 +123,8 @@ const Item = ({ item,  onPress,style }) => (
         >
         <Text style={styles.loginText}>-</Text>
       </TouchableHighlight>
+
+
       <TouchableHighlight
           style={{backgroundColor: "black",
           height: 15,
@@ -109,6 +135,7 @@ const Item = ({ item,  onPress,style }) => (
           borderRadius: 20,
           marginTop:5,}}  
       onPress={()=>{}}>
+
         <Text style={styles.loginText}>1</Text>
       </TouchableHighlight>
       <TouchableHighlight
@@ -125,16 +152,20 @@ const Item = ({ item,  onPress,style }) => (
       </TouchableHighlight>
         </View>
      </View>
-    </View>   
+    </View>  
+    </TouchableOpacity>
+    
        
     
-   </TouchableOpacity>
+
+   </View>
   
   
 );
 
 
 const Cart = () => {
+  let navigation = useNavigation();
   const [selectedId, setSelectedId] = useState(null);
   const [count, doRender] = useState(0);
   const [users, setUsers] = useState([]);
@@ -167,12 +198,11 @@ console.log("products: "+products)
           navigation.navigate('EditUser',item);
           }}
         onDelete={()=>{ondelete(item)
-        }}
+        }}  
         style={{ backgroundColor }}
       />
     );
   };
-  const navigation = useNavigation();
   return (
     <View style={styles.Cartmaincontainer}>
       <FlatList

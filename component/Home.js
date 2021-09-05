@@ -132,7 +132,7 @@ export default function Home() {
         <View style={styles_new.container2}>
         <Image source={Shirt2} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
-        <Text style={styles_new.text}> $24.99</Text>
+        <Text style={styles_new.text}> $25.99</Text>
         </View>
         </TouchableOpacity>
         </View>
@@ -143,7 +143,7 @@ export default function Home() {
         <View style={styles_new.container2}>
         <Image source={Shirt3} style={styles_new.image}/>
         <Text style={styles_new.text}> V Neck Shirt</Text>
-        <Text style={styles_new.text}> $24.99</Text>
+        <Text style={styles_new.text}> $26.99</Text>
         </View>
         </TouchableOpacity>
         
@@ -221,7 +221,8 @@ export default function Home() {
     image :{
       height:180,
       width:150,
-      borderRadius:30
+      borderRadius:30,
+      resizeMode:'contain'
     }
 
   })

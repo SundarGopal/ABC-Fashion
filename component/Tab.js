@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import Profile from './Profile'
 import More from './More'
 import OrderPlaced from './OrderPlaced'
-import Cart from './CartScreen/Cart'
+import Cart from './Cart1'
 
 Icon.loadFont()
 
@@ -50,6 +50,7 @@ export default function MyTabs() {
            tabBarIcon: ({ color, size }) => (
             <Icon name="shopping-cart" size={25}  />
            ),
+           headerShown: false
          }}
          />
         <Tab.Screen name="Profile" component={Profile} 
