@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     bottom: 10,
     left: 220,
   },
+  
   CartforTotal: {
     position: 'absolute',
     bottom: 80,
@@ -76,6 +77,18 @@ const styles = StyleSheet.create({
     left: 10,
     fontSize: 15,
   },
+  CartforTotal2: {
+    position: 'absolute',
+    bottom: 20,
+    left: 10,
+    fontSize: 15,
+  },
+  // cartheading: {
+  //   marginTop: 50,
+  //   paddingLeft: 20,
+  //   fontSize: 30,
+  //   fontWeight: '300',
+  // },
 
   sectionContainer: {
     marginTop: 32,
