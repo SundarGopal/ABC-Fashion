@@ -3,18 +3,24 @@
 ### SETTING UP THE APP
 
 - Clone the repo using the following command
-`git clone https://github.com/sundar-gopal/ABC-Fashion.git`
+
+	`git clone https://github.com/sundar-gopal/ABC-Fashion.git`
 
 - Then go into the folder
-`cd ABC-Fashion`
+ 
+	`cd ABC-Fashion`
 
 - Install the dependencies
-`yarn install`
+
+	`yarn install`
 
 - Go to ios directory and install using pod
+	
 	`cd /ios`
+	
 	`pod install`
-<br>
+	
+<br>	
 
 ### TROUBLE SHOOTING
 
@@ -28,7 +34,6 @@
 - `yarn add @react-navigation/native-stack`
 - `yarn add @react-navigation/bottom-tabs`
 
-<br>
 
  ###### APP BUILDING ERROR
 1. **Issue in loading the vector icons**
