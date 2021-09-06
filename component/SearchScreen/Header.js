@@ -2,7 +2,7 @@ import { SearchBar } from 'react-native-elements';
 import {TextInput,View,Text,StyleSheet,TouchableOpacity} from 'react-native'
 import React, { useState } from 'react';
 import IconAntDesign from 'react-native-vector-icons/AntDesign' 
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 
 IconAntDesign.loadFont()
 

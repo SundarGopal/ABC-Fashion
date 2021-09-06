@@ -27,7 +27,7 @@
     "react-native-linear-gradient": "~2.5.6",
     "react-native-message-bar": "^2.1.0",
     "react-native-pager-view": "^5.4.1",
-    "react-native-photo-view": "github:shoutem/react-native-photo-view#0ffa1481f6b6cb8663cb291b7db1d6644440584d",
+    "react-native-photo-view": "shoutem/react-native-photo-view#0ffa1481f6b6cb8663cb291b7db1d6644440584d",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.6.0",
     "react-native-snap-carousel": "^3.9.1",

@@ -11,7 +11,7 @@ import IconSimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons' //AD
 import IconOcticons from 'react-native-vector-icons/Octicons' //ADD
 import IconFeather from 'react-native-vector-icons/Feather' //ADD
 import IconMaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons' //ADD
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 
 IconAntDesign.loadFont()
 IconIonicons.loadFont()  //ADD

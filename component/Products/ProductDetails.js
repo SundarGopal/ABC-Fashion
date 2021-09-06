@@ -5,7 +5,7 @@ import { Text, View, SafeAreaView, ScrollView, Image, StyleSheet, Dimensions, To
 import IconFeather from 'react-native-vector-icons/Feather'
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
 
-import { useNavigation } from '@react-navigation/core'; //NAVIGATION
+import { useNavigation } from '@react-navigation/native'; //NAVIGATION
 import { getProducts } from "../../services/productstorage";
 const { width } = (Dimensions.get('window'));
 import {Badge} from 'react-native-elements'

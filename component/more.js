@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import { Image,FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,ScrollView} from "react-native";
 
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 import {Icon, Badge} from 'react-native-elements';
 
 import IconAntDesign from 'react-native-vector-icons/AntDesign'

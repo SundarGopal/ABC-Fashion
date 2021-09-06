@@ -18,7 +18,7 @@ export const Shirt4 = require('../src/tshirt/0004_fashion_image.jpg')
 export const Shirt5 = require('../src/tshirt/0005_fashion_image.jpg')
 export const Shirt6 = require('../src/tshirt/0006_fashion_image.jpg')
 
-import { useNavigation } from '@react-navigation/core'; //NAVIGATION
+import { useNavigation } from '@react-navigation/native'; //NAVIGATION
 
 import IconAntDesign from 'react-native-vector-icons/AntDesign' //ADD Ionicons
 import IconIonicons from 'react-native-vector-icons/Ionicons' //ADD

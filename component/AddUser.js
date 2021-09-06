@@ -10,7 +10,7 @@ import {
     Image,
     Alert
 } from 'react-native';
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 import {addUser} from '../services/userstorage'
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
 

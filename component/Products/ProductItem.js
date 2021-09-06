@@ -16,7 +16,7 @@ IconAntDesign.loadFont();
 
 
 
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 
 const ProductItem = props => {
 

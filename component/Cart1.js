@@ -15,7 +15,7 @@ import {Badge} from 'react-native-elements';
 import { getUsers } from '../../services/userstorage'
 import { Icon } from "react-native-elements"
 import IconAntDesign from 'react-native-vector-icons/AntDesign'
-import { useNavigation } from '@react-navigation/core'; //NAVIGATION
+import { useNavigation } from '@react-navigation/native'; //NAVIGATION
 import {getProducts, getCart} from '../services/productstorage'
 
 export const ARROW = require('../src/ARROW.png')
