@@ -14,11 +14,11 @@ import styles from "./Styles"
 import { getUsers } from '../../services/userstorage'
 import {Icon} from "react-native-elements"
 
-export const TICK=require('../../FashionApp/src/Tick.png')
+export const TICK=require('../src/Tick.png')
 
-export const CANCEL=require('../../FashionApp/src/Cancel.png')
+export const CANCEL=require('../src/Cancel.png')
 
-export const ARROW = require('../../FashionApp/src/ARROW.png')
+export const ARROW = require('../src/ARROW.png')
 
 
 
@@ -66,7 +66,7 @@ export default class OrderPlaced extends Component {
                     <Text style={{fontSize:18}}>
                         Your order was placed successfully.
                     </Text>
-                    <Text style={{fontSize:18, marginBottom:40}}>For more details, check All My Orders page under Profile tab</Text>
+                    <Text style={{fontSize:18, marginBottom:40,textAlign:'center'}}>For more details, check All My Orders page under Profile tab</Text>
                     </View>
                 </View>
 

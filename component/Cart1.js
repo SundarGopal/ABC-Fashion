@@ -133,7 +133,7 @@ IconAntDesign.loadFont()
         
             <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row',height:150,backgroundColor:'#F5F5F5'}}>
             
-            <Image style={{width:130,height:130,borderRadius:200,resizeMode:'contain'}} source={productProperty.url}/>
+            <Image style={{width:130,height:130,borderRadius:200,overflow:'hidden'}} source={productProperty.url}/>
             <View style={{borderWidth:0,paddingLeft:15}}> 
             <Text style={{fontSize:18,color:'#636976'}}>{productProperty.name}</Text>
             <Text style={{fontSize:16,color:'#636976'}}>{productProperty.color}</Text>

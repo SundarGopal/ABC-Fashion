@@ -56,7 +56,7 @@ function profile() {
        
         <View style={{paddingLeft:10,paddingRight:50,paddingTop:20,borderWidth:0,flexDirection: 'row'}}> 
 
-        <Image style={styles.profilePic} source={require('../../FashionApp/src/Profile_pic.png')}/>
+        <Image style={styles.profilePic} source={require('../src/Profile_pic.png')}/>
        
        <View style={{padding:25,flex:9,borderWidth:0}}>
        <Text>Rene Sousze</Text>
