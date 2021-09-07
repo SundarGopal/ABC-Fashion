@@ -1,6 +1,6 @@
 # ABC FASHION APP
 
-## CONTRIBUTERS
+## CONTRIBUTORS
 - ### **Sundar G**
 - ### **Sreyas S**
 - ### **Umeshraja N**
