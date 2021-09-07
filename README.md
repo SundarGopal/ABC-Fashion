@@ -1,5 +1,12 @@
 # ABC FASHION APP
 
+### CONTRIBUTERS
+- **Sundar G**
+- **Sreyas S**
+- **Umeshraja N**
+- **Mohammed Awais H**
+
+
 ### SETTING UP THE APP
 
 - Clone the repo using the following command
