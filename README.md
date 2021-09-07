@@ -6,8 +6,9 @@
 - ### **Umeshraja N**
 - ### **Mohammed Awais H**
 
+<br>
 
-### SETTING UP THE APP
+## SETTING UP THE APP
 
 - Clone the repo using the following command
 
@@ -29,7 +30,7 @@
 	
 <br>	
 
-### TROUBLE SHOOTING
+## TROUBLE SHOOTING
 
 ###### Try installing any of the following the dependencies
 
